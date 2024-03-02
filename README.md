@@ -1,6 +1,4 @@
-This project is deployed on the Cloud Server. Feel free to check it 
-
-[here]: http://49.235.128.21
+This project is deployed on the Cloud Server. Feel free to check it [here](http://49.235.128.21).
 
 For the first time loading, it may take some time, thanks for your patience.
 

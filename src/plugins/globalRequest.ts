@@ -38,6 +38,8 @@ request.interceptors.response.use(async (response, options): Promise<any> => {
   const res = await response.clone().json();
   if(res.code === 0) {
     return res.data;
+  } else if (res.code === 40102) {
+    message.warning("Please Login First!");
   } else {
     message.error(res.description);
   }

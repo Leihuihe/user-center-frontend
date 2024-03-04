@@ -160,7 +160,7 @@ const columns: ProColumns<API.CurrentUser>[] = [
   //   },
   // },
   {
-    title: '操作',
+    title: 'Action',
     valueType: 'option',
     key: 'option',
     render: (text, record, _, action) => [
@@ -170,10 +170,10 @@ const columns: ProColumns<API.CurrentUser>[] = [
           action?.startEditable?.(record.id);
         }}
       >
-        编辑
+        Edit
       </a>,
       <a href={record.avatarUrl} target="_blank" rel="noopener noreferrer" key="view">
-        查看
+        View
       </a>,
       <TableDropdown
         key="actionGroup"
@@ -247,7 +247,7 @@ export default () => {
         onChange: (page) => console.log(page),
       }}
       dateFormatter="string"
-      headerTitle="高级表格"
+      headerTitle="User Table"
       toolBarRender={() => [
         <Button
           key="button"
@@ -257,7 +257,7 @@ export default () => {
           }}
           type="primary"
         >
-          新建
+          New
         </Button>,
 
       ]}
